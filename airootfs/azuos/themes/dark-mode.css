@@ -1,0 +1,88 @@
+/*
+  AzuOS Default Theme (Dark)
+	Written By: MTSyntho @ AzuSystem 2024
+  Theme By: JanluOfficial
+*/
+
+:root {
+	--azu-color-background: hsla(0, 0, 30%);
+  --azu-wallpaper: url('../assets/wallpapers/macos.png');
+  /* --azu-wallpaper: url('https://cdn.discordapp.com/attachments/1146907940570284074/1317937509262688426/img28.jpg?ex=67608074&is=675f2ef4&hm=4a8762cc7a24b071c95f21b83fd0efa9f0e03105c40c07e3b8ffe7cfdefeefff&'); */
+  --azu-startbutton: url('../assets/logo_white.svg');
+	--azu-color-main: hsla(270, 0%, 12%);
+	--azu-color-light: hsla(270, 0%, 18%);
+	--azu-color-shadow: hsla(0, 0%, 0%);
+	--azu-button-color-main: hsla(270, 0%, 12%);
+	--azu-text-color: hsla(0, 0%, 100%);
+
+  --azu-button-bg: hsla(0, 0%, 100%, 5%);
+  --azu-button-bg-hover: hsla(0, 0%, 100%, 10%);
+  --azu-button-text: hsla(0, 0%, 100%, 100%);
+
+  --azu-window-blur: blur(16px);
+  --azu-window-background: hsla(269, 0%, 12%, 0.75);
+  --azu-window-border-radius: 12px;
+  --azu-window-border: 1px solid rgba(255, 255, 255, 0.125);
+  --azu-window-shadow: 0px 0px 30px #000000;
+  --azu-window-inner-background: hsla(267, 0%, 9%, 0.312);
+
+  --azu-taskbar-background: hsla(270, 0%, 12%, 75%);
+  --azu-taskbar-outline: 1px solid rgba(255, 255, 255, 0.125);
+  --azu-taskbar-width: 80%;
+  --azu-taskbar-shadow: 0 0 10px 2px #000000cc;
+  --azu-taskbar-blur: blur(16px);
+  --azu-taskbar-border-radius: 12px;
+
+  --azu-button-small-color: hsla(0, 0%, 100%, 5%);
+  --azu-button-small-hover-color: hsla(0, 0%, 100%, 10%);
+  --azu-button-small-clicked-color: hsla(0, 0%, 100%, 5%);
+  --azu-button-small-border-radius: 10px;
+  --azu-button-small-padding: 12px 16px;
+  --azu-button-small-font-size: 12px;
+  --azu-button-small-shadow: none;
+  --azu-button-small-animation-duration: 0.1s;
+
+  --azu-button-large-color: hsla(270, 0%, 12%);
+  --azu-button-large-hover-color: hsla(270, 0%, 17%);
+  --azu-button-large-clicked-color: hsla(270, 0%, 7%);
+  --azu-button-large-border: 2px solid hsla(270, 0%, 17%);
+  --azu-button-large-border-radius: 5px;
+  --azu-button-large-padding: 10px 26px;
+  --azu-button-large-font-size: 16px;
+  --azu-button-large-shadow: 0px 0px 7px #000000;
+  --azu-button-large-animation-duration: 0.2s;
+}
+
+/* @keyframes notification-in {
+  from {
+    right: -400px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  to {
+    right: 0px;
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes notification-out {
+  from {
+    right: 0px;
+    opacity: 1;
+    pointer-events: all;
+  }
+  to {
+    right: -400px;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.__azuos-notification-in {
+  animation: notification-in 0.2s ease-out forwards;
+}
+
+.__azuos-notification-out {
+  animation: notification-out 0.2s ease-in forwards;
+} */

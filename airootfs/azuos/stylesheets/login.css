@@ -1,0 +1,314 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/Inter-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'InterThin';
+  src: url('../assets/fonts/inter/Inter-Thin.ttf');
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter';
+  color: white;
+  text-shadow: 0px 0px 20px #ffffffcc;
+}
+
+.login {
+  background-color: #110b17;
+  background-image: url('../assets/wallpapers/palm tree near dome.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.status-bar {
+  width: calc(100% - 42px);
+  height: 40px;
+  background-color: #00000060;
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 15px #000000ee;
+/*  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;*/
+  padding: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    /*border-radius: 12px;*/
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.align-right {
+  right: 20px;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-panel {
+  width: 30%;
+  height: 210px;
+  background-color: #000000aa;
+  position: fixed;
+  inset: 0;
+  margin: auto 0;
+  left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*backdrop-filter: blur(20px);*/
+  box-shadow: 0px 0px 50px #000000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    /*background-color: rgba(0, 0, 0, 0.27);*/
+    /*border-radius: 12px;*/
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.login-title {
+  font-size: 24px;
+  margin-bottom: 0;
+  text-shadow: 0px 0px 10px #ffffff40;
+}
+
+.center-title {
+  position: fixed;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%); /* Offset by half its width and height */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    pointer-events: none;
+
+  }
+  to {
+    opacity: 1;
+    pointer-events: all;
+
+  }
+}
+
+.fadein {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    pointer-events: all;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.fadeout {
+  animation: fadeout 0.5s ease-in-out forwards;
+}
+
+.quick-button {
+  background: none;
+  color: white;
+  font-family: 'Inter';
+  border: 1px solid #ffffff50;
+  border-radius: 7px;
+  margin-right: 8px;
+  transition-duration: 0.1s;
+  box-shadow: 0px 3px 7px #00000050;
+}
+
+.quick-button:hover {
+  background: #ffffff20;
+}
+
+input {
+  background: none;
+  color: white;
+  font-family: 'Inter';
+  border: 1px solid #ffffff50;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 8px;
+  transition-duration: 0.1s;
+  height: 20px;
+  padding: 5px;
+}
+
+button {
+  background: none;
+  color: white;
+  font-family: 'Inter';
+  border: 1px solid #ffffff50;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 8px;
+  transition-duration: 0.2s;
+  height: 30px;
+  padding: 5px;
+}
+
+button:hover {
+  background: #ffffff10;
+  scale: 1.01;
+}
+
+.quick-apps {
+  width: 200px;
+  height: 150px;
+  right: 15px;
+  margin-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /*backdrop-filter: blur(20px);*/
+/*  box-shadow: 0px 0px 20px #000000cc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 24px;
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.125);*/
+  opacity: 0;
+  z-index: 2;
+  background-color: #000000aa;
+  position: fixed;
+  /*backdrop-filter: blur(20px);*/
+  box-shadow: 0px 0px 50px 2px #000000cc;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    /*background-color: rgba(0, 0, 0, 0.27);*/
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.datetime {
+  width: 30%;
+  height: 80%;
+  background-color: none;
+  position: fixed;
+  top: 50%;
+  right: 0; 
+  transform: translateY(-50%);
+  padding-left: 20px;
+  padding-right: 18%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; 
+  margin-top: 15px;
+}
+
+.time {
+  font-size: 100px;
+  margin: 0;
+  margin-bottom: 75px;
+  width: 100%;
+  position: fixed;
+  font-family: 'Inter';
+  text-shadow: 0px 0px 30px #000000aa;
+}
+
+.date {
+  font-size: 50px;
+  margin: 0;
+  margin-top: 75px;
+  position: fixed;
+  width: 100%;
+  font-family: 'InterThin' !important;
+  text-shadow: 0px 0px 15px #000000;
+}
+
+.top-fade {
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to top, transparent, rgba(0, 0, 0, 0.2));
+  position: fixed;
+  top: 0;
+  z-index: -5;
+}
+
+.bottom-fade {
+  width: 100%;
+  height: 15%;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5));
+  position: fixed;
+  bottom: 0;
+  z-index: -5;
+}
+
+.login-status {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(20px);
+  background: #000000aa;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes login-start {
+  from {
+    opacity: 0;
+    pointer-events: none;
+    scale: 1;
+
+  }
+  to {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1.05;
+
+  }
+}
+
+.login-animation-start {
+  animation: login-start 0.5s ease-out forwards;
+}
+
+@keyframes login-end {
+  from {
+    opacity: 1;
+    pointer-events: all;
+    scale: 1.05;
+  }
+  to {
+    opacity: 0;
+    pointer-events: none;
+    scale: 1;
+  }
+}
+
+.login-animation-end {
+  animation: login-end 0.5s ease-in forwards;
+}
