@@ -1,0 +1,15 @@
+NAME="AzuOS"
+PRETTY_NAME="AzuOS"
+ID=azuos
+ID_LIKE=arch
+VERSION="Alpha 8"
+VERSION_ID="alpha8"
+BUILD_ID=rolling
+ANSI_COLOR="38;2;23;147;209"
+HOME_URL="https://azusystem.github.io/azuos"
+DOCUMENTATION_URL="https://github.com/AzuSystem/AzuOS/wiki"
+SUPPORT_URL="https://github.com/AzuSystem/AzuOS/issues"
+BUG_REPORT_URL="https://github.com/AzuSystem/AzuOS/issues"
+PRIVACY_POLICY_URL="https://github.com/AzuSystem/AzuOS"
+LOGO=archlinux-logo
+RELEASE_TYPE=development
