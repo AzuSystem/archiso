@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=AzuOS
+Comment=AzuOS Desktop
+Exec=/usr/share/azuos/start.sh
+TryExec=/usr/share/azuos/start.sh
+Type=Application

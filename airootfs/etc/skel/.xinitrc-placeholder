@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $EUID -ne 0 ]]; then
+	QTWEBENGINE_CHROMIUM_FLAGS="" exec /usr/share/azuos/installer/azuos-installer
+else
+	QTWEBENGINE_CHROMIUM_FLAGS="--no-sandbox --no-sandbox" exec /usr/share/azuos/installer/azuos-installer
+fi

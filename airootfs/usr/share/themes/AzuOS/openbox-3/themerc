@@ -1,0 +1,68 @@
+# AzuOS Theme for Openbox
+
+window.active.border.color: #ffffff20
+window.active.border.width: 1
+window.active.title.bg: Flat Solid
+window.active.title.bg.color: #1e112c
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.unpressed.bg: Parentrelative
+window.active.button.pressed.bg: Parentrelative
+window.active.button.hover.bg: Parentrelative
+
+window.active.button.unpressed.color: #ffffff
+window.active.button.unpressed.border.color: #ffffff
+window.active.button.pressed.color: #ffffff
+window.active.button.pressed.border.color: #ffffff
+
+window.inactive.border.color: #ffffff10
+window.inactive.border.width: 1
+window.inactive.background.color: #1e112c
+window.inactive.label.text.color: #8888aa
+
+window.inactive.title.bg.color: #1e112c
+window.inactive.title.bg.border.color: #ffffff10
+
+window.inactive.button.unpressed.bg.color: #1e112c
+window.inactive.button.unpressed.border.color: #ffffff20
+window.inactive.button.pressed.bg.color: #1e112c
+window.inactive.button.pressed.border.color: #ffffff40
+
+menu.title.bg: Solid Flat
+menu.title.bg.color: #1e112c
+menu.border.color: #411f66
+menu.title.text.color: #ffffff
+menu.title.text.justify: Center
+
+menu.items.bg: Flat Solid
+menu.items.bg.color: #231433
+menu.items.text.color: #ffffff
+menu.items.disable.text.color: #dddddd
+
+menu.items.active.bg: Flat Solid
+menu.items.active.bg.color: #411f66
+menu.items.active.text.color: #ffffff
+
+#menu.seperator.width: 0.5
+#menu.seperator.padding.height: 20
+
+#menu.title.bg.color: #1e112c
+#menu.title.text.color: #cdd6f4
+#menu.items.bg.color: #1e112c
+#menu.items.text.color: #cdd6f4
+#menu.border.color: #ffffff20
+
+#osd.hilight.bg.color: white
+#osd.unhilight.bg.color: red
+
+border.width: 1
+border.color: #ffffffff
+border.radius: 10
+
+window.client.padding.width: 0
+padding.width: 10
+menu.padding.width: 10
+title.font: Inter:bold:pixelsize=14
+menu.items.font: Inter:pixelsize=12

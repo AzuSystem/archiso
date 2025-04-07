@@ -130,8 +130,6 @@ network-manager-applet
 python
 python-pip
 python-pywebview
-python-psutil
-python-py-cpuinfo
 git
 xorg
 xorg-xinit
@@ -162,3 +160,7 @@ default-cursors
 libxcursor
 libxrandr
 xorg-xrandr
+openbox
+feh
+kitty
+inter-font

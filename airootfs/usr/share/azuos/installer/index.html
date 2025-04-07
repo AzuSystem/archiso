@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AzuOS</title>
+		<link rel="stylesheet" href="setup.css">
+		<script src=setup.js></script>
+	</head>
+	<body>
+		<div class=background id=background>
+			<div class=background-gradient></div>
+		</div>
+		<div class=top-fade></div>
+		<div class=bottom-fade></div>
+		<div class=welcome>
+			<div class=logo-box>
+				<img id=logo class=logo width=120 src=../assets/logo.svg>
+			</div>
+			<div class=welcome-content>
+				<p>Welcome to AzuOS</p>
+				<button class=get-started>
+					<img width=25 src='../assets/icons/wavingHand.svg'>
+					<p>Get Started</p>
+				</button>
+				<button class=get-started onclick='pywebview.api.try_desktop()'>
+					<img width=25 src='../assets/icons/usb.svg'>
+					<p>Try AzuOS</p>
+				</button>
+			</div>
+<!-- 			<div id=account-setup class=content>
+				<h2>Setup System User</h2>
+				<p>System Hostname</p>
+				<input type='text' id='system-hostname' placeholder='AzuOS-PC'>
+				<p>Username</p>
+				<input type='text' id='user-name' placeholder='AzuOS'>
+				<p>Password</p>
+				<input type='password' id='user-password' placeholder='Enter a Password'>\
+			</div> -->
+<!-- 			<div id=wifi-setup class=content>
+				<h2>Connect to Network</h2>
+				<p>Find your network and connect!</p>
+			</div> -->
+			<div class=footer>
+				<p>Copyright @ AzuSystem 2025 - AzuOS Alpha 8</p>
+				<p>https://github.com/AzuSystem/AzuOS</p>
+			</div>
+<!-- 			<div class=previous-next>
+				<button>Previous</button>
+				<button>Next</button>
+			</div> -->
+		</div>
+	</body>
+</html>
