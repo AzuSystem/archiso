@@ -39,5 +39,5 @@ jobs:
                   echo "Uploading to Odysen CI CDN..."
                   ls out
                   sleep 4
-                  curl -H "authorization: ${{ env.KEY }}" -H "content-type: multipart/form-data" -H "x-zipline-folder: ${{ env.CIUUID }}" https://${{ env.HOST }}/api/upload -F "file=@$(find out | grep .iso)" 
+                  curl -H "authorization: ${{ secrets.CDN_KEY }}" -H "content-type: multipart/form-data" -H "x-zipline-folder: ${{ secrets.CDN_CIUUID }}" https://${{ secrets.CDN_HOST }}/api/upload -F "file=@$(find out | grep .iso)" 
                   
