@@ -22,8 +22,8 @@ jobs:
               run: |
                   pacman-key --init
                   pacman --noconfirm -Sy archlinux-keyring
-                  echo ${{ secrets.CDN_HOST }}
-                  echo ${{ secrets.CDN_CIUUID }}
+                  echo cdn ${{ secrets.CDN_HOST }}
+                  echo cdn ${{ secrets.CDN_CIUUID }}
             
             - name: Install tools
               run: |
