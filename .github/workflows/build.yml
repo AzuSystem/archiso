@@ -32,7 +32,7 @@ jobs:
             
             - name: Build ISO
               run: |
-                  mkarchiso -v 
+                  mkarchiso -v .
 
             - name: Upload ISO
               run: |
