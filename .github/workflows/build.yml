@@ -13,6 +13,7 @@ env:
 jobs:
     build:
         runs-on: ubuntu-latest
+        environment: secrets 
         container:
             image: archlinux:latest
             options: --privileged
