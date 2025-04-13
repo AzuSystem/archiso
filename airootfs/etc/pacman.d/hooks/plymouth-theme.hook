@@ -6,5 +6,5 @@ Target = plymouth
 [Action]
 Description = Set AzuOS Plymouth Theme
 When = PostTransaction
-Exec = /usr/bin/plymouth-set-default-theme -R breeze
+Exec = /usr/bin/plymouth-set-default-theme -R azuos
 # remove from airootfs!
