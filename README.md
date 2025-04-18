@@ -1,5 +1,11 @@
 # AzuOS
 
+## What is AzuOS?
+AzuOS is an Arch-based operating system, that features its own desktop made on top of Openbox.
+
+## What is this repository for?
+This repository hosts the archiso configuration and files for building an AzuOS system.
+
 ## Build instructions
 
 ### Prerequisites
