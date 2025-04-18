@@ -38,7 +38,7 @@ git clone https://github.com/AzuSystem/archiso
 ```
 
 ### Build system
-Change directory into the newly cloned repository, make an "out" directory in it and start building the config:
+Change directory into the newly cloned repository, make an "out" directory in it and start building the config (with administrative permissions again):
 
 ```bash
 cd archiso; mkdir out; mkarchiso -v -w /tmp/archiso-tmp -o ./out ./
