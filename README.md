@@ -1,14 +1,16 @@
-# AzuOS
+<div align="center">
+ <img width="120" alt="AzuOS: If it runs on the Web, it runs on AzuOS" src="https://raw.githubusercontent.com/AzuSystem/azuos-legacy/refs/heads/main/assets/logo.svg">
+	<h1>AzuOS ( archiso )</h1>
+	<p>AzuOS is an Arch-based Operating System focused on its unreal design</p>
+	<a href='https://azusystem.github.io/azuos'>Visit our Website ↗</a>
+</div>
 
-## What is AzuOS?
-AzuOS is an Arch-based operating system, that features its own desktop made on top of Openbox.
-
-## What is this repository for?
+## 🤔 What is this repository for?
 This repository hosts the archiso configuration and files for building an AzuOS system.
 
-## Build instructions
+## 💻 Build instructions
 
-### Prerequisites
+### 🧰 Prerequisites
 To build the archiso-config, you need to have a system running **Arch Linux** (or derivatives).
 
 The following packages are ALSO required for building:
@@ -30,15 +32,15 @@ You can install these by running the following command with administrative permi
 pacman -S git xorriso arch-install-scripts dosfstools erofs-utils libburn libisoburn libisofs mtools squashfs-tools archiso
 ```
 
-### Cloning repository
+### 🧬 Cloning repository
 Next, clone this repository by running the following in the Arch system:
 
 ```bash
 git clone https://github.com/AzuSystem/archiso
 ```
 
-### Build system
-Change directory into the newly cloned repository, make an "out" directory in it and start building the config (with administrative permissions again):
+### 🔨 Build system
+Change directory into the newly cloned repository, make an "out" directory in it and start building the config ( with administrative permissions again ):
 
 ```bash
 cd archiso; mkdir out; mkarchiso -v -w /tmp/archiso-tmp -o ./out ./
