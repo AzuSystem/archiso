@@ -1,4 +1,3 @@
-
 alsa-utils
 amd-ucode
 arch-install-scripts
@@ -86,7 +85,6 @@ mtools
 nano
 nbd
 ndisc6
-neofetch
 network-manager-applet
 networkmanager
 nfs-utils
@@ -114,7 +112,6 @@ pv
 python
 python-pip
 python-pyqt5
-python-pyqt5-webengine
 python-pywebview
 python-qtpy
 qemu-guest-agent
@@ -164,7 +161,6 @@ xdg-utils
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-nouveau
-xf86-video-vmware
 xfsprogs
 xl2tpd
 xorg
