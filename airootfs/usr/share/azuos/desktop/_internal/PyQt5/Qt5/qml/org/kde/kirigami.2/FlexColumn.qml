@@ -1,0 +1,65 @@
+/*
+ *  SPDX-FileCopyrightText: 2020 Carson Black <uhhadd@gmail.com>
+ *
+ *  SPDX-License-Identifier: LGPL-2.0-or-later
+ */
+
+import QtQuick 2.12
+import QtQuick.Layouts 1.12
+import org.kde.kirigami 2.13 as Kirigami
+
+//TODO KF6: how much is this used? can be removed?
+/**
+ * @brief FlexColumn is a column that grows in width to a fixed cap.
+ * @warning This might be removed in KF6 due to not being used.
+ * @inherit QtQuick.Layouts.ColumnLayout
+ */
+ColumnLayout {
+    id: __outer
+
+    default property alias columnChildren: __inner.children
+
+    /**
+     * @brief This property holds the column's offset from the cross axis.
+     *
+     * Note that padding is applied on both sides
+     * when the column is aligned to a centered cross axis.
+     *
+     * default: ``Kirigami.Units.largeSpacing``
+     */
+    property real padding: Kirigami.Units.largeSpacing
+
+    /**
+     * @brief This property holds maximum column width.
+     *
+     * default: ``Kirigami.Units.gridUnit * 50``
+     */
+    property real maximumWidth: Kirigami.Units.gridUnit * 50
+
+    /**
+     * @brief This property sets column's alignment when it hits its maximum width.
+     *
+     * default: ``Qt.AlignHCenter | Qt.AlignTop``
+     *
+     * @property Qt::Alignment alignment
+     */
+    property int alignment: Qt.AlignHCenter | Qt.AlignTop
+
+    Layout.fillWidth: true
+    Layout.fillHeight: true
+
+    enum CrossAxis {
+        Left,
+        Center,
+        Right
+    }
+
+    ColumnLayout {
+        id: __inner
+        spacing: __outer.spacing
+        Layout.maximumWidth: __outer.maximumWidth
+        Layout.leftMargin: __outer.alignment & Qt.AlignLeft || __outer.alignment & Qt.AlignHCenter ? __outer.padding : 0
+        Layout.rightMargin: __outer.alignment & Qt.AlignRight || __outer.alignment & Qt.AlignHCenter ? __outer.padding : 0
+        Layout.alignment: __outer.alignment
+    }
+}

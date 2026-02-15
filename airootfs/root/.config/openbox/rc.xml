@@ -326,6 +326,22 @@
         <command>kfmclient openProfile filemanagement</command>
       </action>
     </keybind>
+    <!-- Keybindings for Keyboard Audio Shortcuts -->
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>pactl set-sink-volume @DEFAULT_SINK@ +5%</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>pactl set-sink-volume @DEFAULT_SINK@ -5%</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <command>pactl set-sink-mute @DEFAULT_SINK@ toggle</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
@@ -687,15 +703,16 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-    <application title="AzuOS Desktop" type="normal">
+    <application title="Azura Desktop" type="normal">
       <skip_taskbar>true</skip_taskbar>
       <shading>false</shading>
       <stick>false</stick>
       <layer>below</layer>
       <!-- This sends the window to the bottom layer -->
     </application>
-    <application name="azuos-dock">
+    <application class="azuos-dock">
       <layer>above</layer>
+      <maximized>no</maximized>
     </application>
     <!-- s -->
     <!--

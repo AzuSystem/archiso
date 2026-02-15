@@ -1,0 +1,13 @@
+QWidget {
+    background-color: #ffff00;
+    color: #f8f8f2;
+    font-family: "Noto Sans";
+    font-size: 10pt;
+}
+
+QPushButton {
+    background-color: #ff0000;
+    border: 1px solid #6272a4;
+    border-radius: 4px;
+    padding: 4px;
+}

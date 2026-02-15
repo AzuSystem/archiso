@@ -13,8 +13,10 @@ window.active.button.pressed.bg: Parentrelative
 window.active.button.hover.bg: Parentrelative
 
 window.active.button.unpressed.color: #ffffff
+window.active.button.unpressed.bg.color: #1e112c
 window.active.button.unpressed.border.color: #ffffff
 window.active.button.pressed.color: #ffffff
+window.active.button.pressed.bg.color: #1e112c
 window.active.button.pressed.border.color: #ffffff
 
 window.inactive.border.color: #ffffff10
@@ -26,9 +28,13 @@ window.inactive.title.bg.color: #1e112c
 window.inactive.title.bg.border.color: #ffffff10
 
 window.inactive.button.unpressed.bg.color: #1e112c
-window.inactive.button.unpressed.border.color: #ffffff20
+window.inactive.button.unpressed.border.color: #ffffff40
 window.inactive.button.pressed.bg.color: #1e112c
 window.inactive.button.pressed.border.color: #ffffff40
+
+window.button.unpressed.color: #ffffff
+window.button.pressed.color:   #ffffff
+window.button.hover.color:     #ffffff
 
 menu.title.bg: Solid Flat
 menu.title.bg.color: #1e112c
