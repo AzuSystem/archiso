@@ -89,7 +89,6 @@ mtools
 nano
 nbd
 ndisc6
-neofetch
 network-manager-applet
 networkmanager
 nfs-utils
@@ -127,7 +126,6 @@ qt5-quickcontrols2
 qt5-svg
 qt6
 qt6-base
-qt6-graphicaleffects
 qt6-multimedia
 qt6-5compat
 qt6-svg
