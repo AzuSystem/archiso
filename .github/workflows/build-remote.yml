@@ -1,4 +1,4 @@
-name: Build an ISO
+name: Build an ISO ( Remote Upload )
 
 on:
     workflow_dispatch:
