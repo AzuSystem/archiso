@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+NoDisplay=true
+X-KDE-AliasFor=systemsettings
+Exec=kcmshell6 darklystyleconfig
+Icon=preferences-desktop-theme
+Name=Darkly: Widget Style

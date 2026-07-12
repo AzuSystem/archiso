@@ -1,3 +1,3 @@
 #!/bin/bash
 
-exec /usr/bin/azura-session.sh
+exec /usr/bin/azura-session-x11.sh

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Azura ( X11 )
+Comment=AzuOS Desktop Environment on Xorg
+Exec=dbus-run-session /usr/bin/azura-session-x11.sh
+TryExec=dbus-run-session /usr/bin/azura-session-x11.sh
+Type=Application
+
