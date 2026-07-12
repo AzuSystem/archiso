@@ -1,0 +1,37 @@
+name: Build an ISO ( Actions Artifact )
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        environment: secrets 
+        container:
+            image: archlinux:latest
+            options: --privileged
+        steps:
+            - uses: actions/checkout@v2
+            - name: Prepare keyring
+              run: |
+                  pacman-key --init
+                  pacman --noconfirm -Sy archlinux-keyring
+                  echo cdn ${{ secrets.CDN_HOST }}
+                  echo cdn ${{ secrets.CDN_CIUUID }}
+            
+            - name: Install tools
+              run: |
+                  rm /etc/pacman.conf
+                  cp pacman.conf /etc/pacman.conf
+                  pacman --noconfirm -Syyu
+                  pacman --noconfirm -S archiso git jq
+            
+            - name: Build ISO
+              run: |
+                  mkarchiso -v .
+        
+            - name: Upload artifact
+              uses: actions/upload-artifact@v4.6.2
+              with:
+                name: azuos-iso
+                path: out/*.iso
