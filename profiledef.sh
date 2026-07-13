@@ -3,7 +3,7 @@
 
 iso_name="AzuOS"
 iso_label="AZUOS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="AzuSystem <https://azusystem.github.io>"
+iso_publisher="AzuSystem <https://azusystem.github.io/azuos>"
 iso_application="AzuOS"
 iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
 install_dir="arch"
@@ -25,6 +25,9 @@ file_permissions=(
   ["/usr/local/bin/choose-mirror"]="0:0:755"
   ["/usr/local/bin/Installation_guide"]="0:0:755"
   ["/usr/local/bin/livecd-sound"]="0:0:755"
-  ["/usr/share/azuos/dock/azuos-dock"]="0:0:755"
-  ["/usr/share/azuos/desktop/azuos-desktop"]="0:0:755"
+  ["/usr/share/azuos/azuos-setup"]="0:0:755"
+  ["/usr/share/azuos/dock/azura-dock"]="0:0:755"
+  ["/usr/bin/azura-session-x11.sh"]="0:0:755"
+  ["/usr/bin/darkly-settings6"]="0:0:755"
+  ["/usr/share/azuos/desktop/azura_desktop"]="0:0:755"
 )
