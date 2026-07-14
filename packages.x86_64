@@ -8,6 +8,7 @@ arch-install-scripts
 base
 broadcom-wl
 chromium
+dolphin
 default-cursors
 dex
 dosfstools
@@ -117,4 +118,5 @@ xfsprogs
 xorg-server
 xorg-xinit
 xorg-xrandr
+vlc
 zsh
