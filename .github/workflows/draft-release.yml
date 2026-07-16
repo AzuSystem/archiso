@@ -1,0 +1,23 @@
+name: Draft a Github Release
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Download latest artifact
+            uses: actions/download-artifact@v3.1.0
+            with:
+              name: build
+          - name: Extract image
+            run: unzip build.zip 
+          - name: GH Release
+            uses: softprops/action-gh-release@v3.0.0
+            with:
+              body: "auto upload"
+              draft: true
+              prerelease: true
+              make_latest: false
+              files: *.iso
