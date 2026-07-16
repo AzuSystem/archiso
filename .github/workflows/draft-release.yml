@@ -10,9 +10,9 @@ jobs:
           - name: Download latest artifact
             uses: actions/download-artifact@v4
             with:
-              name: build
+              name: azuos-iso
           - name: Extract image
-            run: unzip build.zip 
+            run: unzip azuos-iso.zip 
           - name: GH Release
             uses: softprops/action-gh-release@v3.0.0
             with:
