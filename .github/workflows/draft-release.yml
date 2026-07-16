@@ -20,4 +20,4 @@ jobs:
               draft: true
               prerelease: true
               make_latest: false
-              files: *.iso
+              files: ./*.iso
