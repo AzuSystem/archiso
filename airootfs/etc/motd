@@ -1,8 +1,8 @@
 Hii,
-To Start \e[0;35mAzura\e[0m, run 'startx'
+To Start [0;35mAzura[0m, run 'startx'
 
 Note:
-If you do not have internet access, run `systemctl enable --now NetworkManager`,
-and check out the `nmcli` utility for WiFi networks. Hope this helps! <3
+If you do not have internet access, run `[0;33msystemctl enable --now NetworkManager[0m`,
+and check out the `[0;33mnmcli[0m` utility for WiFi networks. Hope this helps! [1;31m<3[0m
 
 [41m [41m [41m [40m [44m [40m [41m [46m [45m [41m [46m [43m [41m [44m [45m [40m [44m [40m [41m [44m [41m [41m [46m [42m [41m [44m [43m [41m [45m [40m [40m [44m [40m [41m [44m [42m [41m [46m [44m [41m [46m [47m [0m
