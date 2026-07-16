@@ -35,3 +35,22 @@ jobs:
               with:
                 name: azuos-iso
                 path: out/*.iso
+
+    release:
+        needs: build
+        runs-on: ubuntu-latest
+        steps:
+          - name: Download artifact
+            uses: actions/download-artifact@v4
+            with:
+              name: azuos-iso
+              path: . 
+
+          - name: Draft a Github release
+            uses: softprops/action-gh-release@v3.0.0
+            with:
+              body: "auto upload"
+              draft: true
+              prerelease: true
+              make_latest: false
+              files: ./*.iso
