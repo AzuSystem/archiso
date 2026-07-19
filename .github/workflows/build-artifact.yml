@@ -47,7 +47,11 @@ jobs:
             with:
                 name: azuos-iso
                 path: . 
-
+                
+          - name: Compress into split archives
+            run: |
+                7z a -mx0 -v1500m azuos.7z *.iso    
+                
           - name: Draft a Github release
             uses: softprops/action-gh-release@v3.0.0
             with:
@@ -56,4 +60,4 @@ jobs:
                 draft: true
                 prerelease: true
                 make_latest: false
-                files: ./*.iso
+                files: ./*.7z.*
