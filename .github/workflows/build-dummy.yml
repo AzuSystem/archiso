@@ -1,0 +1,28 @@
+name: Test build upload ( Dummy Upload )
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Create dummy file
+        run: |
+          fallocate -l 2.2G dummy.iso
+        
+      - name: Compress into split archives
+        run: |
+          7z a -mx0 -v1500m azuos.7z *.iso
+        
+      - name: Draft a Github release
+        uses: softprops/action-gh-release@v3.0.0
+        with:
+          tag_name: ${{ github.ref_name }}-${{ github.run_number }}
+          body: "auto upload"
+          draft: true
+          prerelease: true
+          make_latest: false
+          files: ./*.7z.*
